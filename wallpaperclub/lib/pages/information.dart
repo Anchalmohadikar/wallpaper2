@@ -13,6 +13,7 @@ color: Colors.black,
     GridView.count(
               
                  shrinkWrap: true,
+                 physics: ClampingScrollPhysics(),
                 scrollDirection: Axis.vertical,
                 
                 
@@ -27,13 +28,25 @@ color: Colors.black,
                   
                     child: Container(
                       
-                        
-                        
-                       child: Image.network(wallpaper.src.tiny),
+ 
+
+
+
+                        color: Colors.black,
+                        child:ClipRRect(
+                          borderRadius: BorderRadius.circular(16),
+                       child: Image.network(wallpaper.src.portrait, fit:BoxFit.cover),
 
                               
                           ),
+                    ),
                   );
+
+
+                  
+                  
+            
+
                     }
                     ).toList(),
                           

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaperclub/pages/home.dart';
+import 'package:wallpaperclub/pages/search.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,12 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       
       theme: ThemeData(
         
         
       ),
-      home: Home(),
+      initialRoute: '/',
+      routes: {
+        '/':(context)=>Home(),
+        'search':(context)=>Search(),
+      },
+     
     );
   }
 }
