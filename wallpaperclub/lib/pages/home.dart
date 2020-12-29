@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaperclub/helper/data.dart';
 import 'package:wallpaperclub/modal/category_model.dart';
+import 'package:wallpaperclub/pages/category.dart';
+import 'package:wallpaperclub/pages/image_view.dart';
 import 'package:wallpaperclub/pages/photo.dart';
 import 'package:wallpaperclub/constant/Global.dart';
 import 'package:http/http.dart' as http;
@@ -14,6 +16,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 List<CategoryModel>catergories=new List<CategoryModel>();
 List<Photo>wallpaper=new List();
+
 
 getwallpaper() async {
 
@@ -69,6 +72,7 @@ getwallpaper() async {
           IconButton(
             icon: Icon(Icons.search, color: Colors.white),
             onPressed: () {
+              Navigator.of(context).pushNamed('search',);
               //search
             },
           )
@@ -173,6 +177,17 @@ class CategoryTile extends StatelessWidget {
     return GestureDetector(
 
       onTap: (){
+         Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder:(context)=>Category(categoryName:  categoryName.toLowerCase(),
+                    )
+                    ));
+                  
+
+
+
+                //search
       },
 
     
@@ -182,16 +197,35 @@ class CategoryTile extends StatelessWidget {
       
       child: Stack(
         children: <Widget>[
+           
+
+
+           
+
+    
+        
+                //search
+    
+
+        
+          
           ClipRRect(
             borderRadius:BorderRadius.circular(6),
            child: Image.network(imageUrl, width: 100,height:60, fit: BoxFit.cover,),
           ),
-          Container(
+          
+           
+        Container(
+         
+         
+         
             alignment: Alignment.center,
             child: Text(categoryName,style: TextStyle(color: Colors.white,)),
            
-          )
+          ),
+          
         ],
+          
       ),
 
     ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaperclub/pages/home.dart';
 import 'package:wallpaperclub/pages/search.dart';
+import 'package:wallpaperclub/pages/searchwall.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,12 +16,13 @@ class MyApp extends StatelessWidget {
       
       theme: ThemeData(
         
-        
+  
       ),
       initialRoute: '/',
       routes: {
         '/':(context)=>Home(),
         'search':(context)=>Search(),
+        'searchwall':(context)=>Searchwall( ),
       },
      
     );

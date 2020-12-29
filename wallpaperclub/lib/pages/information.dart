@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wallpaperclub/pages/image_view.dart';
 import 'package:wallpaperclub/pages/photo.dart';
 import 'package:wallpaperclub/constant/Global.dart';
 
@@ -25,7 +26,21 @@ color: Colors.black,
                     children: wallpaper.map((wallpaper){
                
                   return GridTile(
-                  
+
+                    child:GestureDetector(
+
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(
+                          builder:(context)=>Image_view(
+                            imageUrl:wallpaper.src.portrait,
+                          ))
+                        );
+
+                      },
+                  child:Hero(
+                    tag: wallpaper.src.portrait,
+                    
+
                     child: Container(
                       
  
@@ -40,6 +55,8 @@ color: Colors.black,
                               
                           ),
                     ),
+                  ),
+                  ),
                   );
 
 
