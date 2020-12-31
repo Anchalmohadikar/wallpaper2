@@ -1,12 +1,18 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:wallpaperclub/helper/data.dart';
-import 'package:wallpaperclub/modal/category_model.dart';
-import 'package:wallpaperclub/pages/photo.dart';
-import 'package:wallpaperclub/constant/Global.dart';
+
+import 'dart:typed_data';
+
+import 'dart:io';
+
+import 'package:permission_handler/permission_handler.dart';
+import 'package:dio/dio.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:wallpaperclub/pages/information.dart';
+
+
+import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:flutter/material.dart';
+
 
 class Image_view extends StatefulWidget {
   final String imageUrl;
@@ -16,6 +22,7 @@ class Image_view extends StatefulWidget {
 }
 
 class _Image_viewState extends State<Image_view> {
+  var filePath;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,8 +44,9 @@ class _Image_viewState extends State<Image_view> {
        children: <Widget>[
      GestureDetector(
        onTap: (){
+         _save();
 
-         Navigator.pop(context);
+   
        },
             child: Stack
           (
@@ -91,4 +99,37 @@ Text("Image will be save in your gallery",style: TextStyle(fontSize:9,color: Col
       ),
     );
   }
+
+
+
+_save() async{
+  if(Platform.isAndroid){
+    await _askPermission();
+  }
+
+    var response = await Dio().get(
+      widget.imageUrl,
+    options :Options(responseType:ResponseType.bytes));
+  final result=
+  await ImageGallerySaver.saveImage(Uint8List.fromList(response.data));
+  print(result);
+  Navigator.pop(context);
 }
+_askPermission() async{
+if(Platform.isIOS){
+  
+    Map<PermissionGroup,PermissionStatus> permissions =
+    await PermissionHandler()
+      .requestPermissions([PermissionGroup.Photos]);
+  
+}
+  else{
+  
+        PermissionStatus permission = await PermissionHandler()
+        .checkPermissionStatus(PermissionGroup.storage);
+          }
+          
+        }
+}
+       
+        

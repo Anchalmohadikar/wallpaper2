@@ -8,6 +8,7 @@ import 'package:wallpaperclub/constant/Global.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:wallpaperclub/pages/information.dart';
+import 'package:permission_handler/permission_handler.dart';
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
