@@ -89,27 +89,16 @@ class _HomeState extends State<Home> {
             ),
           ),
           ListTile(
-            title: Text('wallpapers'),
-            onTap: () {},
-          ),
-          ListTile(
-            title: Text('Login'),
-            onTap: () {},
-          ),
-          ListTile(
-            title: Text('Register'),
+            title: Text('Categories'),
             onTap: () {
-              Navigator.pop(context);
+              
             },
           ),
           ListTile(
             title: Text('Setting'),
             onTap: () {},
           ),
-          ListTile(
-            title: Text('Contact us'),
-            onTap: () {},
-          ),
+          
         ]),
       ),
       body: SingleChildScrollView(
