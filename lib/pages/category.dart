@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:wallpaperclub/pages/photo.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:wallpaperclub/pages/information.dart';
+
+import 'package:wallpaperclub/widgets/information.dart';
 
 class Category extends StatefulWidget {
   final String categoryName;

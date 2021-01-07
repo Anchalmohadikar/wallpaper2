@@ -5,7 +5,8 @@ import 'package:wallpaperclub/pages/category.dart';
 import 'package:wallpaperclub/pages/photo.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-import 'package:wallpaperclub/pages/information.dart';
+
+import 'package:wallpaperclub/widgets/information.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -90,15 +91,12 @@ class _HomeState extends State<Home> {
           ),
           ListTile(
             title: Text('Categories'),
-            onTap: () {
-              
-            },
+            onTap: () {},
           ),
           ListTile(
             title: Text('Setting'),
             onTap: () {},
           ),
-          
         ]),
       ),
       body: SingleChildScrollView(

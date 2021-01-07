@@ -15,12 +15,11 @@ class _SearchwallState extends State<Searchwall> {
   List<Photo> wallpaper = new List();
 
   getsearchwallpaper(String query) async {
-    var response = await http.get(
-        "https://api.pexels.com/v1/search?query=$query",
-        headers: {
-          "Authorization":
-              "563492ad6f917000010000014cf4949fca7045f6b73fab576533a5da"
-        });
+    var response = await http
+        .get("https://api.pexels.com/v1/search?query=$query", headers: {
+      "Authorization":
+          "563492ad6f917000010000014cf4949fca7045f6b73fab576533a5da"
+    });
     print(response.body.toString());
     Map<String, dynamic> jsonData = jsonDecode(response.body);
     jsonData["photos"].forEach((element) {
