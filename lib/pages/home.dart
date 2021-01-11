@@ -89,13 +89,35 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
+
+          ListTile(
+            title: Text('About us'),
+            onTap: () { Navigator.of(context).pushNamed(
+                'About',
+              );},
+          ),
           ListTile(
             title: Text('Categories'),
             onTap: () {},
           ),
           ListTile(
             title: Text('Setting'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamed(
+                'setting',
+              );
+
+
+            },
+          ),
+
+          ListTile(
+            title: Text('Contact us'),
+            onTap: () {
+               Navigator.of(context).pushNamed(
+                'contact',
+              );
+            },
           ),
         ]),
       ),

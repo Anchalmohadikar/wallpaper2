@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:wallpaperclub/pages/home.dart';
 import 'package:wallpaperclub/pages/search.dart';
 import 'package:wallpaperclub/pages/searchwall.dart';
+import 'package:wallpaperclub/pages/setting.dart';
+import 'package:wallpaperclub/pages/About.dart';
+import 'package:wallpaperclub/pages/contact.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -19,7 +23,11 @@ class MyApp extends StatelessWidget {
         '/': (context) => Home(),
         'search': (context) => Search(),
         'searchwall': (context) => Searchwall(),
+        'setting': (context) => Setting(),
+        'About': (context) => About(),
+        'Contact': (context) => Contact(),
       },
+      
     );
   }
 }
