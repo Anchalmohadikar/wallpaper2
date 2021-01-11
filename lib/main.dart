@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         'searchwall': (context) => Searchwall(),
         'setting': (context) => Setting(),
         'About': (context) => About(),
-        'Contact': (context) => Contact(),
+        'contact': (context) => Contact(),
       },
       
     );

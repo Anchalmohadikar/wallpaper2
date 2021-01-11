@@ -32,13 +32,80 @@ class _ContactState extends State<Contact> {
                   fontSize: 30.0,
                 ),
               ),
+
+
+            ),
+
+            Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextFormField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'name',
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextFormField(
+                  
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Enter email',
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: TextFormField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Phone no.',
+                    ),
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.fromLTRB(
+                    10.0,
+                    10.0,
+                    10.0,
+                    5.0,
+                  ),
+                  height: 80,
+                  child: TextField(
+                    
+                    
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Enter any comment',
+                    ),
+                  ),
+                ),
+                MaterialButton(
+                    textColor: Colors.black,
+                    color: Colors.white,
+                    height: 60.0,
+                    minWidth: 120.0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(
+                        50.0,
+                      ),
+                    ),
+                    child: Text(
+                      'Submit',),
+                      onPressed: () {}),
+                      
+                   
+              ],
             ),
 
             ],
             )
-        ],
-    ),
+    
       
     );
+      
+  
   }
 }
