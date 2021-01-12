@@ -17,7 +17,7 @@ class _DonateState extends State<Donate> {
               10.0,
             ),
             child: Text(
-              'Comming soon',
+              'Coming soon',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w500,

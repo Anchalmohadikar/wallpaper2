@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaperclub/pages/image_view.dart';
-import 'package:wallpaperclub/pages/photo.dart';
+import 'package:wallpapersclub/pages/image_view.dart';
+import 'package:wallpapersclub/pages/photo.dart';
 
 Widget wallpapersList({List<Photo> wallpaper, context}) {
   return Container(

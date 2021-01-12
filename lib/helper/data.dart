@@ -1,4 +1,4 @@
-import 'package:wallpaperclub/modal/category_model.dart';
+import 'package:wallpapersclub/modal/category_model.dart';
 
 String apiKEY = "2efc3571549fc0e7282bf364453445ec79339cc7";
 

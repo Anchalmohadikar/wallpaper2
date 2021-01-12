@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaperclub/pages/photo.dart';
+import 'package:wallpapersclub/pages/photo.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 

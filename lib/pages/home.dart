@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaperclub/helper/data.dart';
-import 'package:wallpaperclub/modal/category_model.dart';
-import 'package:wallpaperclub/pages/category.dart';
-import 'package:wallpaperclub/pages/photo.dart';
+import 'package:provider/provider.dart';
+import 'package:wallpapersclub/helper/data.dart';
+import 'package:wallpapersclub/modal/category_model.dart';
+import 'package:wallpapersclub/pages/category.dart';
+import 'package:wallpapersclub/pages/photo.dart';
 import 'package:http/http.dart' as http;
+import 'package:wallpapersclub/providers/AdmobAds.dart';
 import 'dart:convert';
 
-import 'package:wallpaperclub/widgets/information.dart';
+import 'package:wallpapersclub/widgets/information.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -40,6 +42,13 @@ class _HomeState extends State<Home> {
     catergories = getCategories();
     getwallpaper();
     super.initState();
+    Provider.of<AdmobAds>(context, listen: false).initialize();
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    Provider.of<AdmobAds>(context, listen: false).dispose();
   }
 
   @override
@@ -49,7 +58,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-          "WallpaperClub",
+          "Wallpaper Club",
           style: TextStyle(
             fontSize: 22,
             color: Colors.white,

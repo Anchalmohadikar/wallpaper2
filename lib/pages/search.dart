@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wallpaperclub/pages/searchwall.dart';
+import 'package:wallpapersclub/pages/searchwall.dart';
 
 class Search extends StatefulWidget {
   @override

@@ -1,4 +1,4 @@
-name: wallpaperclub
+name: wallpapersclub
 description: A new Flutter project.
 
 publish_to: 'none'
@@ -11,23 +11,42 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cached_network_image: ^2.2.0+1
-  cupertino_icons: ^1.0.1
-  esys_flutter_share: ^1.0.2
+  cached_network_image: ^2.5.0
+  connectivity: ^2.0.2
+  cupertino_icons: ^1.0.2
   file_utils: ^0.1.4
+  firebase_admob: ^0.11.0
+  firebase_analytics: ^7.0.0
   flutter_spinkit: ^4.1.2+1
-  fluttertoast: ^4.0.1
+  fluttertoast: ^7.1.6
   font_awesome_flutter: ^8.11.0
   google_fonts: ^1.1.1
   http: ^0.12.2
-  path_provider: ^1.6.9
-  permission_handler: ^4.0.0
-  shared_preferences: ^0.5.7+3
+  path_provider: ^1.6.27
+  permission_handler: ^5.0.1+1
+  provider: ^4.3.2+3
+  shared_preferences: ^0.5.12+4
   url_launcher: ^5.7.10
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.8.1
+  flutter_rename_app: ^1.0.0
+
+flutter_icons:
+  android: "ic_launcher"
+  ios: false
+  image_path: "assets/icons/square/ICON.png"
+
+flutter_rename_app:
+  application_name: Wallpapers Club
+  dart_package_name: wallpapersclub
+  application_id: com.fz.wallpapersclub
+  bundle_id: com.fz.wallpapersclub
+  android_package_name: com.fz.wallpapersclub
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/icons/

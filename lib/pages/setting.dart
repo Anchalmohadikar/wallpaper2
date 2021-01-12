@@ -1,4 +1,4 @@
-import 'package:wallpaperclub/pages/searchwall.dart';
+import 'package:wallpapersclub/pages/searchwall.dart';
 import 'package:flutter/material.dart';
 
 class Setting extends StatefulWidget {
