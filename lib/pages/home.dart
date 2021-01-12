@@ -120,14 +120,7 @@ class _HomeState extends State<Home> {
             },
           ),
 
-          ListTile(
-            title: Text('Contact us'),
-            onTap: () {
-               Navigator.of(context).pushNamed(
-                'contact',
-              );
-            },
-          ),
+          
         ]),
       ),
       body: SingleChildScrollView(

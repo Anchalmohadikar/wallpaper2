@@ -21,7 +21,10 @@ dependencies:
   file_utils: ^0.1.4
   path_provider: ^1.6.9
   fluttertoast: ^4.0.1
-  flutter_spinkit: ^4.1.2+1
+  flutter_spinkit: ^4.1.2+1 
+  url_launcher: ^5.7.10
+  
+  font_awesome_flutter: ^8.11.0
 
 dev_dependencies:
   flutter_test:

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 class About extends StatefulWidget {
   @override
   _AboutState createState() => _AboutState();
@@ -72,8 +73,8 @@ class _AboutState extends State<About> {
                   right: 15.0,
                 ),
                 child: Text(
-                  'WallpaperHub is one of the best app.Its a great collection of the  uniques wallpapers.In this app you can get wallpapers as your wish. Additionally,This app comes with the features like , download function, share,and more.The wallpapers of the wallpaperHub is with high resolution for any phone screen. The UI of this  app is very simple to use and user friendly.This app with 1000+ wallpapers more  newly per day.It is completly free and easily accessible app. ',
-                  textAlign: TextAlign.center,
+                  'WallpaperClub is one of the best app.Its a great collection of the  uniques wallpapers.In this app you can get wallpapers as your wish. Additionally,This app comes with the features like , download function, share,and more.The wallpapers of the wallpaperClub is with high resolution for any phone screen. The UI of this  app is very simple to use and user friendly.This app with 1000+ wallpapers more  newly per day.It is completly free and easily accessible app. ',
+                  textAlign: TextAlign.left,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 13.0,
@@ -89,13 +90,13 @@ SizedBox(height:16),
                 ),
               
               child: Text(
-                'Developed by: Parth agrawal & Anchal mohadikar',
-    
+                'Developed by: Anchal Mohadikar',
+     textAlign: TextAlign.left,
 
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w500,
-                  fontSize: 15.0,
+                  fontSize: 14.0,
                 ),
               ),
             ),
@@ -110,6 +111,80 @@ SizedBox(height:16),
                     height: 50,
                     thickness: 3,
                   )),
+
+                  Container(
+                  margin: const EdgeInsets.only(
+                    left: 10.0,
+                    right: 15.0,
+                  ),
+                  child:Row(children: <Widget>[
+
+                   
+              
+
+             IconButton(
+                                      icon: Icon(
+                                        FontAwesomeIcons.github,
+                                        color: Colors.white,
+                                      ),
+                                      onPressed: () {},
+                                    ),
+ IconButton(
+                                      icon: Icon(
+                                        FontAwesomeIcons.linkedin,
+                                        color: Colors.white,
+                                      ),
+                                      onPressed: () 
+                                      
+                                      {}
+                                    ),
+
+                                     IconButton(
+                                      icon: Icon(
+                                        FontAwesomeIcons.facebook,
+                                        color: Colors.white,
+                                      ),
+                                      onPressed: () {},
+                                    ),
+
+
+
+
+                  ],)
+                  
+                  
+                  ),
+
+
+
+
+                  SizedBox(height:40),
+
+                   Container(
+                     height: 60,
+                  margin: const EdgeInsets.only(
+                     left: 10.0,
+                    right: 15.0,
+                  ),
+                  
+                  color:Colors. black,
+
+                  
+              child: Text(
+                '@ Copyright 2021 FrazileMedia.All Rights Reserved ',
+    textAlign: TextAlign.left,
+
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 12.0,
+                ),
+              ),
+                  
+                  ),
+
+                  SizedBox(height:19),
+
               
             ],
           ),

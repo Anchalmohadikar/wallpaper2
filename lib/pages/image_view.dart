@@ -39,58 +39,25 @@ class ImageviewState extends State<Imageview> {
                   onTap: () {},
                   child: Stack(
                     children: <Widget>[
-                      Container(
-                        height: 55,
-                        width: MediaQuery.of(context).size.width / 2,
-                        color: Colors.transparent,
-                      ),
-                      Positioned(
-                        bottom: MediaQuery.of(context).size.height * .07,
-                        left: MediaQuery.of(context).size.width * .08,
-                        right: MediaQuery.of(context).size.width * .27,
-                        child: MaterialButton(
-                          splashColor: Colors.grey[100],
-                          color: Colors.white.withOpacity(.47),
-                          textColor: Colors.white,
-                          elevation: 5.0,
-                          height: 40.0,
-                          // focusColor: Colors.orange,
-                          // minWidth: 50.0,
-                          child: Text("Download"),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(40.0),
-                          ),
-                          onPressed: () {},
-                        ),
-                      ),
-                      Container(
-                        height: 55,
-                        width: MediaQuery.of(context).size.width / 2,
-                        padding: EdgeInsets.symmetric(
-                          horizontal: 8,
-                          vertical: 8,
-                        ),
-                        decoration: BoxDecoration(
-                          border: Border.all(color: Colors.white60, width: 2),
-                          borderRadius: BorderRadius.circular(30),
-                        ),
-                        child: Column(
-                          children: <Widget>[
-                            Text(
-                              "Set as wallpaper",
-                              style: TextStyle(
-                                  fontSize: 15, color: Colors.white60),
-                            ),
-                            Text(
-                              "Image will be save in your gallery",
-                              style: TextStyle(
-                                fontSize: 9,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+             Container(child:
+IconButton(
+                                      icon: Icon(
+                                        Icons.download_rounded,
+                                        color: Colors.white,
+                                      ),
+                                      onPressed: () {},
+                                        
+                                      
+                                    ),
+             ),
+
+             IconButton(
+                                      icon: Icon(
+                                        Icons.share_rounded,
+                                        color: Colors.white,
+                                      ),
+                                      onPressed: () {},
+                                    ),
                       SizedBox(height: 60),
                     ],
                   ),
