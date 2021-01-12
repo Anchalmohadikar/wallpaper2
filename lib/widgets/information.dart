@@ -31,7 +31,7 @@ Widget wallpapersList({List<Photo> wallpaper, context}) {
               child: Container(
                 color: Colors.black,
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(16),
+                  //borderRadius: BorderRadius.circular(16),
                   child:
                       Image.network(wallpaper.src.portrait, fit: BoxFit.cover),
                 ),

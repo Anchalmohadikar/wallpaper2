@@ -5,6 +5,7 @@ import 'package:wallpaperclub/pages/searchwall.dart';
 import 'package:wallpaperclub/pages/setting.dart';
 import 'package:wallpaperclub/pages/About.dart';
 import 'package:wallpaperclub/pages/contact.dart';
+import 'package:wallpaperclub/pages/donate.dart';
 
 
 void main() {
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         'setting': (context) => Setting(),
         'About': (context) => About(),
         'contact': (context) => Contact(),
+        'donate': (context) => Donate(),
       },
       
     );

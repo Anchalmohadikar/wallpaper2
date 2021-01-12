@@ -42,6 +42,8 @@ class _ContactState extends State<Contact> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'name',
+                       fillColor: Colors.white,
+                      filled: true,
                     ),
                   ),
                 ),
@@ -52,6 +54,8 @@ class _ContactState extends State<Contact> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Enter email',
+                       fillColor: Colors.white,
+                      filled: true,
                     ),
                   ),
                 ),
@@ -62,6 +66,8 @@ class _ContactState extends State<Contact> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Phone no.',
+                       fillColor: Colors.white,
+                      filled: true,
                     ),
                   ),
                 ),
@@ -79,6 +85,8 @@ class _ContactState extends State<Contact> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Enter any comment',
+                       fillColor: Colors.white,
+                      filled: true,
                     ),
                   ),
                 ),

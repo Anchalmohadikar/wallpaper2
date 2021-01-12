@@ -1,18 +1,16 @@
-import 'package:wallpaperclub/pages/searchwall.dart';
 import 'package:flutter/material.dart';
 
-class Setting extends StatefulWidget {
+class Donate extends StatefulWidget {
   @override
-  _SettingState createState() => _SettingState();
+  _DonateState createState() => _DonateState();
 }
 
-class _SettingState extends State<Setting> {
- 
+class _DonateState extends State<Donate> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-       body: Stack(
+      body: Stack(
         fit: StackFit.expand,
         children: [
 Container(
@@ -30,6 +28,6 @@ Container(
               ),
             ),
         ])
-      );
+    );
   }
 }

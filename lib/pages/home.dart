@@ -112,6 +112,15 @@ class _HomeState extends State<Home> {
           ),
 
           ListTile(
+            title: Text('donate'),
+            onTap: () {
+               Navigator.of(context).pushNamed(
+                'donate',
+              );
+            },
+          ),
+
+          ListTile(
             title: Text('Contact us'),
             onTap: () {
                Navigator.of(context).pushNamed(
