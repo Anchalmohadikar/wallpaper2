@@ -89,12 +89,13 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-
           ListTile(
             title: Text('About us'),
-            onTap: () { Navigator.of(context).pushNamed(
+            onTap: () {
+              Navigator.of(context).pushNamed(
                 'About',
-              );},
+              );
+            },
           ),
           ListTile(
             title: Text('Categories'),
@@ -106,21 +107,16 @@ class _HomeState extends State<Home> {
               Navigator.of(context).pushNamed(
                 'setting',
               );
-
-
             },
           ),
-
           ListTile(
             title: Text('donate'),
             onTap: () {
-               Navigator.of(context).pushNamed(
+              Navigator.of(context).pushNamed(
                 'donate',
               );
             },
           ),
-
-          
         ]),
       ),
       body: SingleChildScrollView(

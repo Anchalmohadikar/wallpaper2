@@ -39,25 +39,22 @@ class ImageviewState extends State<Imageview> {
                   onTap: () {},
                   child: Stack(
                     children: <Widget>[
-             Container(child:
-IconButton(
-                                      icon: Icon(
-                                        Icons.download_rounded,
-                                        color: Colors.white,
-                                      ),
-                                      onPressed: () {},
-                                        
-                                      
-                                    ),
-             ),
-
-             IconButton(
-                                      icon: Icon(
-                                        Icons.share_rounded,
-                                        color: Colors.white,
-                                      ),
-                                      onPressed: () {},
-                                    ),
+                      Container(
+                        child: IconButton(
+                          icon: Icon(
+                            Icons.download_rounded,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {},
+                        ),
+                      ),
+                      IconButton(
+                        icon: Icon(
+                          Icons.share_rounded,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {},
+                      ),
                       SizedBox(height: 60),
                     ],
                   ),

@@ -9,40 +9,34 @@ class _ContactState extends State<Contact> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
-      body: Stack(
-        fit: StackFit.expand,
-        children: [
-
-
-
+        backgroundColor: Colors.black,
+        body: Stack(
+          fit: StackFit.expand,
+          children: [
             Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-               Container(
-              alignment: Alignment.center,
-              padding: EdgeInsets.all(
-                10.0,
-              ),
-              child: Text(
-                'Contact us',
-                style: TextStyle(
-                  color: Colors.red,
-                  fontWeight: FontWeight.w500,
-                  fontSize: 30.0,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.all(
+                    10.0,
+                  ),
+                  child: Text(
+                    'Contact us',
+                    style: TextStyle(
+                      color: Colors.red,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 30.0,
+                    ),
+                  ),
                 ),
-              ),
-
-
-            ),
-
-            Padding(
+                Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'name',
-                       fillColor: Colors.white,
+                      fillColor: Colors.white,
                       filled: true,
                     ),
                   ),
@@ -50,11 +44,10 @@ class _ContactState extends State<Contact> {
                 Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: TextFormField(
-                  
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Enter email',
-                       fillColor: Colors.white,
+                      fillColor: Colors.white,
                       filled: true,
                     ),
                   ),
@@ -66,7 +59,7 @@ class _ContactState extends State<Contact> {
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Phone no.',
-                       fillColor: Colors.white,
+                      fillColor: Colors.white,
                       filled: true,
                     ),
                   ),
@@ -80,12 +73,10 @@ class _ContactState extends State<Contact> {
                   ),
                   height: 80,
                   child: TextField(
-                    
-                    
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: 'Enter any comment',
-                       fillColor: Colors.white,
+                      fillColor: Colors.white,
                       filled: true,
                     ),
                   ),
@@ -101,19 +92,12 @@ class _ContactState extends State<Contact> {
                       ),
                     ),
                     child: Text(
-                      'Submit',),
-                      onPressed: () {}),
-                      
-                   
+                      'Submit',
+                    ),
+                    onPressed: () {}),
               ],
             ),
-
-            ],
-            )
-    
-      
-    );
-      
-  
+          ],
+        ));
   }
 }

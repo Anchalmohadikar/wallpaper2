@@ -7,7 +7,6 @@ import 'package:wallpaperclub/pages/About.dart';
 import 'package:wallpaperclub/pages/contact.dart';
 import 'package:wallpaperclub/pages/donate.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -29,7 +28,6 @@ class MyApp extends StatelessWidget {
         'contact': (context) => Contact(),
         'donate': (context) => Donate(),
       },
-      
     );
   }
 }
