@@ -58,7 +58,7 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-          "Wallpaper Club",
+          "Wallpapers Club",
           style: TextStyle(
             fontSize: 22,
             color: Colors.white,
@@ -108,7 +108,10 @@ class _HomeState extends State<Home> {
           ),
           ListTile(
             title: Text('Categories'),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).pushNamed(
+                'home',);
+            },
           ),
           ListTile(
             title: Text('Setting'),

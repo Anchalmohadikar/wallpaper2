@@ -30,6 +30,7 @@ class _ConfigAppState extends State<ConfigApp> {
           'About': (context) => About(),
           'contact': (context) => Contact(),
           'donate': (context) => Donate(),
+           'home': (context) => Home(),
         },
       ),
     );

@@ -30,7 +30,7 @@ class _AboutState extends State<About> {
 
   /// Linkedin Link
   linkedinURL() async {
-    const url = 'https://github.com/Anchalmohadikar';
+    const url = 'https://www.linkedin.com/mwlite/in/anchal-mohadikar-b051121a1';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -40,7 +40,7 @@ class _AboutState extends State<About> {
 
   /// Facebook Link
   facebookURL() async {
-    const url = 'https://github.com/Anchalmohadikar';
+    const url = 'https://www.facebook.com/anchal.mohadikar';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
@@ -72,14 +72,14 @@ class _AboutState extends State<About> {
                     color: Colors.white,
                     width: 3.0,
                   ),
-                  image: DecorationImage(
-                    image: NetworkImage(
-                      "https://images.unsplash.com/photo-1601758282760-b6cc3d07523d?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
-                    ),
-                    fit: BoxFit.fill,
+                 
+                    
+                  
+                     
+                    
                   ),
                 ),
-              ),
+              
               Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.all(
